@@ -1,12 +1,13 @@
-import React from 'react'
-import LoginForms from './components/LoginForm'
-
+import React from "react";
+import LoginForms from "./components/LoginForm";
+import { Container } from "@mui/material";
 
 const App = () => {
   return (
+    <Container maxWidth="lg">
+      <LoginForms />
+    </Container>
+  );
+};
 
-    <div><LoginForms/></div>
-  )
-}
-
-export default App
+export default App;
