@@ -1,12 +1,19 @@
 import React from "react";
-import LoginForms from "./components/LoginForm";
-import { Container } from "@mui/material";
-
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from "./Pages/Home";
+import About from "./Pages/About";
+import Contact from "./Pages/Contact";
 const App = () => {
   return (
-    <Container maxWidth="lg">
-      <LoginForms />
-    </Container>
+    <>
+      <Router>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/About" element={<About />} />
+          <Route path="/Contact" element={<Contact />} />
+        </Routes>
+      </Router>
+    </>
   );
 };
 
