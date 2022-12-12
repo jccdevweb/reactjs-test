@@ -5,6 +5,8 @@ import Home from "./Pages/Home";
 import About from "./Pages/About";
 import Contact from "./Pages/Contact";
 import ErrorPage from "./Pages/ErrorPage"
+import LoginForm from "./components/LoginForm"
+
 const App = () => {
   return (
     <>
@@ -14,6 +16,7 @@ const App = () => {
           <Route path="/" element={<Home />} />
           <Route path="/About" element={<About />} />
           <Route path="/Contact" element={<Contact />} />
+          <Route path="/LoginForm" element={<LoginForm />} />
           <Route path="*" element={<ErrorPage />} />
         </Routes>
       </Router>
