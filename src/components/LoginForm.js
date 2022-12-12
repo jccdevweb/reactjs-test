@@ -65,9 +65,7 @@ const LoginForm = () => {
             </Button>
         </Grid>
       </Grid>
-   
-
-  
+     
     </form>
   );
 };

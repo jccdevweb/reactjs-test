@@ -6,7 +6,10 @@ import About from "./Pages/About";
 import Contact from "./Pages/Contact";
 import ErrorPage from "./Pages/ErrorPage"
 import LoginForm from "./components/LoginForm"
+import Navbar2 from "./components/Navbar2"
 import './index.css'
+
+
 const App = () => {
   return (
     <>
