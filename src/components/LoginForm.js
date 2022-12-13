@@ -28,8 +28,8 @@ const LoginForm = () => {
   };
 
   return (
-    <form onSubmit={submitLogin}>
-      <Grid container spacing={2} mt={10}>
+    <form className="loginForm" onSubmit={submitLogin}>
+      <Grid className="gridLoginForm" container spacing={2} mt={5}>
         <Grid item xs={12}>
           <Typography variant="h3">Login</Typography>
         </Grid>
@@ -54,18 +54,12 @@ const LoginForm = () => {
             fullWidth
           />
         </Grid>
-          <Grid item xs={12} >
-            <Button 
-              variant="contained"
-              type="submit" 
-              fullWidth 
-              size="large"
-            >
-              Log in
-            </Button>
+        <Grid item xs={12}>
+          <Button variant="contained" type="submit" fullWidth size="large">
+            Log in
+          </Button>
         </Grid>
       </Grid>
-     
     </form>
   );
 };

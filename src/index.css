@@ -16,8 +16,6 @@ body {
   padding: 20px 3%;
 }
 
-.nav-brand {
-}
 .Logo{
   color:rgb(240, 83, 83);
 }
@@ -39,7 +37,17 @@ padding: 10px 10px;
   padding: 10px;
 }
 
+/* Login Form */
 
+.loginForm{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 3%;
+}
+
+
+/* @media 300 and 700 navbar */
 @media only screen and (max-width: 744px) {
 
 body{

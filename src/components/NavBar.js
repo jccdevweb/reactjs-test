@@ -75,8 +75,8 @@ const Navbar = () => {
         }}
       >
         <MenuItem onClick={handleClose}><Link to="/">Home</Link></MenuItem>
-        <MenuItem onClick={handleClose}><Link to="/About">About</Link></MenuItem>
-        <MenuItem onClick={handleClose}><Link to="/Contact">Contact</Link></MenuItem>
+        <MenuItem onClick={handleClose}><Link to="/LoginForm">Login</Link></MenuItem>
+        <MenuItem onClick={handleClose}><Link to="/SignupForm">Sign up</Link></MenuItem>
       </Menu>
           </Paper>
         </li>
