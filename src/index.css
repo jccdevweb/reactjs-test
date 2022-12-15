@@ -129,7 +129,7 @@ margin: 3rem 0;
 }
 .image-right{
  
-  max-width:100%;
+  width:100%;
   height: auto;
   border-radius: 2px;
   margin:0 0 5% 8;
@@ -144,10 +144,11 @@ margin: 3rem 0;
 }
 
 .container-sub{
-  margin:0;
+  margin: 0 0 5% 0;
   padding:0 5%;
 }
   .content-right{
   display: none;
 }
+
 }
