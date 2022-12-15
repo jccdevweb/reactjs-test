@@ -1,0 +1,27 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "fullName": "charles",
+      "email": "cv@gmail.com",
+      "contact": "+639-235-1234",
+      "address": "Heaven at paralajo"
+    },
+    {
+      "id": 2,
+      "fullName": "cha",
+      "email": "chachawaowaowao@gmail.com",
+      "contact": "2232",
+      "address": "Test Olympus qc",
+      "active": true
+    },
+    {
+      "id": 3,
+      "fullName": "cha",
+      "email": "21312@12312312",
+      "contact": "0292929",
+      "address": "Sout olympus",
+      "active": true
+    }
+  ]
+}
