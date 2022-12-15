@@ -1,6 +1,5 @@
 import React from "react";
-import { TextField, Button } from "@mui/material";
-import "../index.css";
+import "../styles/Home.css";
 const Home = () => {
   return (
     <div className=" main-home">
