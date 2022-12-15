@@ -7,7 +7,8 @@ import Contact from "./Pages/Contact";
 import ErrorPage from "./Pages/ErrorPage"
 import LoginForm from "./components/LoginForm"
 import SignupForm from "./components/SignupForm"
-
+import Todo from "./todos-component/Todo"
+import Todos from "./todos-component/Todos"
 import './index.css'
 
 
@@ -22,8 +23,9 @@ const App = () => {
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/login-form" element={<LoginForm />} />
-          <Route path="/signi-form" element={<SignupForm />} />
-     
+          <Route path="/signup-form" element={<SignupForm />} />
+          <Route path="/todo/:id" element={<Todo />} />
+          <Route path="/todos" element={<Todos />} />
           <Route path="*" element={<ErrorPage />} />
         </Routes>
       </Router>
