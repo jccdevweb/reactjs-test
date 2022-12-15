@@ -6,7 +6,7 @@ const Home = () => {
     <div className=" main-home">
       <div className="content content-left">
         <div className="content-container">
-          <h1 className="content-h"> What is Lorem Ipsum? </h1>
+        <img className="logo-content" src="https://graphicsfamily.com/wp-content/uploads/edd/2021/07/House-Logo-Design.jpg"/>
           <p className="content-p1">
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry's standard dummy text
