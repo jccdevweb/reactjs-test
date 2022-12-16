@@ -17,6 +17,7 @@ const Read = () => {
         console.log(err.message);
       });
   }, []);
+  
   const {id: employeeId,fullName,email,address,contact}= readCrud  || {}
   console.log(readCrud)
   return (

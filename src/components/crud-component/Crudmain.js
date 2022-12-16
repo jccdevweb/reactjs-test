@@ -1,6 +1,6 @@
 import React from "react";
 import { useEffect, useState } from "react";
-import { CircularProgress,Button } from "@mui/material";
+import { CircularProgress, } from "@mui/material";
 import {useNavigate} from "react-router-dom"
 
 
@@ -20,6 +20,19 @@ const Crudmain = () => {
       });
   }, []);
 
+const removeFuncetion =(id) =>{
+  if(window.confirm("Delete")){
+    fetch("http://localhost:8000/posts"+id,{
+      method: "DELETE"
+    }).then((res)=>{
+      alert("Remove Success")
+    }).catch((err)=>{
+      console.log(err.message)
+    })
+
+    
+  }
+}
   console.log(database);
   return (
     <div >
@@ -40,7 +53,7 @@ const Crudmain = () => {
               {database.map((item) => {
                 const { id, fullName, email, contact, address } = item;
                 return (
-                  <tr key={item.id} onClick={()=>navigate(`/read/${id}`)}>
+                  <tr key={item.id}onClick={()=>navigate(`/read-crud/${id}`)}>
                     <td>{id}</td>
                     <td>{fullName}</td>
                     <td>{email}</td>
@@ -49,7 +62,7 @@ const Crudmain = () => {
                     <td>
                       <button className="btn btn-success">Update</button>
                       <button className="btn btn-danger">Delete</button>
-                      <button className="btn btn-info"   onClick={()=>navigate(`/read/${id}`)}>Details</button>
+                      <button onClick={removeFuncetion}className="btn btn-info">Details</button>
                     </td>
                   </tr>
                 );
