@@ -8,7 +8,7 @@ const Crudmain = () => {
   const [database, setDatabase] = useState();
   const navigate = useNavigate();
   useEffect(() => {
-    fetch("http://localhost:8000/posts")
+    fetch("https://localhost:8000/posts")
       .then((res) => {
         return res.json();
       })

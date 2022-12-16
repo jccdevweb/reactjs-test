@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route} from "react-router-dom";
-
+import Navbar from "./components/Navbar/Navbar-main";
 import Home from "./Pages/Home";
 import About from "./Pages/About";
 import Contact from "./Pages/Contact";
@@ -9,8 +9,6 @@ import LoginForm from "./components/forms-components/LoginForm"
 import SignupForm from "./components/forms-components/SignupForm"
 import Todo from "./components/todos-component/Todo"
 import Todos from "./components/todos-component/Todos"
-import Crudmain from "./components/crud-component/Crudmain"
-import CrudRead from "./components/crud-component/Read"
 import './index.css'
 
 
@@ -18,8 +16,8 @@ import './index.css'
 const App = () => {
   return (
     <>
+     <Navbar/>
       <Router>
-    
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
@@ -29,8 +27,6 @@ const App = () => {
           <Route path="/todo/:id" element={<Todo />} />
           <Route path="/todos" element={<Todos />} />
           <Route path="*" element={<ErrorPage />} />
-          <Route path="/crud-main" element={<Crudmain />} />
-          <Route path="/read/:id" element={<CrudRead />} />
         </Routes>
       </Router>
     </>

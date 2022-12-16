@@ -6,7 +6,7 @@ const Read = () => {
   const {id} = useParams();
   const [readCrud,setReadCrud] = useState()
   useEffect(() => {
-    fetch(`http://localhost:8000/posts/${id}`)
+    fetch(`https://localhost:8000/posts/${id}`)
       .then((res) => {
         return res.json();
       })
