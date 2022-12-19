@@ -1,8 +1,10 @@
 import React from "react";
+import MemberListing from "../components/crud-reactjs/MemberListing";
 import "../styles/Home.css";
 
 const Home = () => {
   return (
+    <> <MemberListing/>
     <div className=" main-home">
       <div className="content content-left">
         <div className="content-container">
@@ -48,7 +50,7 @@ const Home = () => {
       </div>
       </div>
     </div>
-  );
+    </>);
 };
 
 export default Home;

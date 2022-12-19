@@ -6,7 +6,8 @@ const SignupForm = () => {
     firstName:'',
     lastName:'',
     age:'',
-    email:''
+    email:'',
+    database:[]
 })
 
 const submitFrom = (e) =>{
@@ -19,7 +20,10 @@ const submitFrom = (e) =>{
  console.log(userDetail)
 
 return (
-  <> <form onSubmit={submitFrom}>
+  <>
+  
+  
+   <form onSubmit={submitFrom}>
       <Grid container spacing={2} mt={5}>
         <Grid item xs={12}>
           <Typography variant="h3">Sign up</Typography>
@@ -74,6 +78,9 @@ return (
         </Grid>
       </Grid>
     </form>
+
+    
+
 </>
   )
 }

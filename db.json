@@ -1,26 +1,10 @@
 {
-  "posts": [
+  "member": [
     {
       "id": 1,
-      "fullName": "charles",
-      "email": "cv@gmail.com",
-      "contact": "+639-235-1234",
-      "address": "Heaven at paralajo"
-    },
-    {
-      "id": 2,
-      "fullName": "chaCha",
-      "email": "chachawaowaowao@gmail.com",
-      "contact": "+639-3345-66221",
-      "address": "Test Olympus qc",
-      "active": true
-    },
-    {
-      "id": 3,
-      "fullName": "chawao",
-      "email": "21312@12312312",
-      "contact": "+639-223-6644",
-      "address": "Sout olympus",
+      "name": "Charles",
+      "email": "Cha@gmail.com",
+      "phone": "213123123123123",
       "active": true
     }
   ]
