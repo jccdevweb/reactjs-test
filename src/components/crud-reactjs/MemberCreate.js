@@ -8,10 +8,34 @@ const MemberCreate = () => {
     phone: "",
     active: true,
   });
+  const [showAlert, setshowAlert] = useState(false);
+  const setTimeoutFunction = () => {
+    setshowAlert(true);
+    setTimeout(() => {
+      setshowAlert(false);
+    }, 5000);
+  };
+  const [error, setError] = useState("");
   const { id, name, email, phone, active } = formChange;
   const navigate = useNavigate();
   const submitForm = (e) => {
     e.preventDefault();
+
+    if (formChange.name.length < 5) {
+      setTimeoutFunction();
+      setError("Name must have 5 character above");
+      return;
+    }
+    if (formChange.phone.length <= 10) {
+      setTimeoutFunction();
+      setError("Phone No. must have 11 digit");
+      return;
+    }
+    if (formChange.phone.length >= 12) {
+      setTimeoutFunction();
+      setError("Phone No. must have 11 digit");
+      return;
+    }
     fetch("http://localhost:8000/member", {
       method: "POST",
       headers: { "content-type": "application/json" },
@@ -33,8 +57,9 @@ const MemberCreate = () => {
             <div className="card">
               <div className="card-title">
                 <h2>Member Create</h2>
+                <div style={{ color: "red" }}>{showAlert ? error : ""}</div>
               </div>
-
+              <div style={{ color: "red" }}></div>
               <div className="card-body " style={{ textAlign: "left" }}>
                 <div className="row">
                   <form onSubmit={submitForm}>
@@ -113,7 +138,7 @@ const MemberCreate = () => {
                           }
                           required
                         />
-                        <label className="form-check-label">Is Active</label>
+                        <label className="form-check-label">I Agree to Terms and Condition</label>
                       </div>
                     </div>
                     <div className="col-lg-12 text-center">

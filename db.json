@@ -1,11 +1,3 @@
 {
-  "member": [
-    {
-      "id": 1,
-      "name": "Charles",
-      "email": "Cha@gmail.com",
-      "phone": "213123123123123",
-      "active": true
-    }
-  ]
+  "member": []
 }

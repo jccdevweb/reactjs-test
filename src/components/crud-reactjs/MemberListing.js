@@ -3,6 +3,7 @@ import { Link, useNavigate } from "react-router-dom";
 const MemberListing = () => {
   //stored data from db next memberData.map((item)=>{return()})
   const [memberData, setMemberData] = useState(null);
+  
   const navigate = useNavigate();
   //Button Function
   const LoadDetails = (id) => {
@@ -17,7 +18,7 @@ const MemberListing = () => {
         method: "DELETE",
       })
         .then((res) => {
-          alert("Delete Successfully !!");
+          alert("Delete Successfully!!");
           window.location.reload();
         })
         .catch((err) => {

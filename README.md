@@ -4,3 +4,4 @@
 # Form with Validation
 # Todolist with API 
 # CRUD
+# npx json-server --watch db.json --port 8000

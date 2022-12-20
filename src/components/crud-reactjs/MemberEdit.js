@@ -3,13 +3,13 @@ import { useParams, Link, useNavigate } from "react-router-dom";
 const MemberEdit = () => {
   const { id: memberId } = useParams();
 
-  // const [memberData,setMemberData] = useState({});
+
   useEffect(() => {
     fetch(" http://localhost:8000/member/" + memberId)
       .then((res) => {
         return res.json();
       })
-      //store data in useState
+   
       .then((resp) => {
         idChange(resp.id);
         nameChange(resp.name);
@@ -27,7 +27,8 @@ const MemberEdit = () => {
   const [email, emailChange] = useState("");
   const [phone, phoneChange] = useState("");
   const [active, activeChange] = useState(true);
-  
+
+
   const navigate = useNavigate();
   
   const submitForm = (e) => {

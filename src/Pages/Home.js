@@ -24,20 +24,20 @@ const Home = () => {
           />
           <img
             className="image"
-            src="https://www.bhg.com/thmb/0Fg0imFSA6HVZMS2DFWPvjbYDoQ=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/white-modern-house-curved-patio-archway-c0a4a3b3-aa51b24d14d0464ea15d36e05aa85ac9.jpg"
+              src="https://www.bhg.com/thmb/0Fg0imFSA6HVZMS2DFWPvjbYDoQ=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/white-modern-house-curved-patio-archway-c0a4a3b3-aa51b24d14d0464ea15d36e05aa85ac9.jpg"
           />
         </div>
-        <form class="container-form row g-3">
-          <div class="col-auto">
+        <form className="container-form row g-3">
+          <div className="col-auto">
             <input
               type="email"
-              class="form-control"
+              className="form-control"
               id="email-input"
               placeholder=" Lorem Ipsum"
             />
           </div>
-          <div class="col-auto">
-            <button type="submit" class="btn btn-primary mb-3">
+          <div className="col-auto">
+            <button type="submit" className="btn btn-primary mb-3">
             Ipsum
             </button>
           </div>
